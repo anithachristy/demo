@@ -1,0 +1,49 @@
+{
+  "development": {
+    "APP":{
+      "port":"3301"
+    },
+    "DB":{
+    "username": "postgres",
+    "password": "sanmina",
+    "database": "jenengg",
+    "host": "localhost",
+    "dialect": "postgres",
+    "port": "5432",
+    "pool": {
+        "max": 20,
+        "min": 1,
+        "idle": 60000,
+        "connectionTimeoutMillis": 30000, 
+        "maxUses": 7500
+    },
+    "returning": false,
+    "quoteIdentifiers": false,
+    "keepDefaultTimezone": true
+  }
+  },
+  "test": {
+    "APP":{
+      "port":"3302"
+    },
+    "DB":{
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+  },
+  "production": {
+    "APP":{
+      "port":"3303"
+    },
+    "DB":{
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
+}
